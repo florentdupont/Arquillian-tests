@@ -1,0 +1,19 @@
+{
+        "WeatherInfo":
+        [
+                {
+                        "id" : 1,
+                        "townCode" : "NTE",
+                        "townName" : "Nantes",
+                        "temperature" : "32°C",
+                        "isRainingInAnHour" : false
+                },
+                {
+                        "id" : 2,
+                        "townCode" : "BRT",
+                        "townName" : "Brest",
+                        "temperature" : "32°C",
+                        "isRainingInAnHour" : false
+                }
+        ]
+}
