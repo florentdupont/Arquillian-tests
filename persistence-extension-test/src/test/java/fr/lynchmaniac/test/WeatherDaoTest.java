@@ -36,11 +36,11 @@ public class WeatherDaoTest {
 	 * 
 	 * */
 	
-	@PersistenceContext
-	EntityManager em;
+	//@PersistenceContext
+	//EntityManager em;
 	
-	@Resource
-	UserTransaction utx;
+	//@Resource
+	//UserTransaction utx;
 	
 	@EJB
 	WeatherInfoDao dao;
@@ -193,7 +193,7 @@ public class WeatherDaoTest {
 		    Par contre, pour les dataset de matching, il est préférable d'exclure la colonne des id.
 		  */
 		  
-		  System.out.println("STATUT DE LA TRANSACTION : " + printStatus(utx.getStatus()));
+		 // System.out.println("STATUT DE LA TRANSACTION : " + printStatus(utx.getStatus()));
 		  
 		  dao.saveInfo(info1);
 		  dao.saveInfo(info2);

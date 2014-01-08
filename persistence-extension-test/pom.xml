@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.lynchmaniac.arquilliantest</groupId>
-	<artifactId>ArquillianJPA</artifactId>
+	<artifactId>persistence-extension-test</artifactId>
 	<packaging>war</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>ArquillianFeedback Maven Webapp</name>
@@ -70,13 +70,20 @@
 
 <!-- pour le mode MANAGED : le serveur doit etre éteint et va s'allumer tout seul pour les tests.
 Dans ce mode, le JBOSS_HOME doit etre alimenté. -->
- <dependency>
+ <!-- <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-arquillian-container-managed</artifactId>
             <version>7.1.1.Final</version>
             <scope>test</scope>
         </dependency>
+     -->
     
+    <dependency>
+  <groupId>org.wildfly</groupId>
+  <artifactId>wildfly-arquillian-container-managed</artifactId>
+  <version>8.0.0.Beta1</version>
+  <scope>test</scope>
+</dependency>
 
         <!-- test flo : pour le mode REMOTE  : le serveur doit etre allumé.-->
         <!--  <dependency>
@@ -93,6 +100,9 @@ Dans ce mode, le JBOSS_HOME doit etre alimenté. -->
   <version>1.0.0.Alpha6</version>
   <scope>test</scope>
 </dependency>
+
+
+
 		
 	</dependencies>
 

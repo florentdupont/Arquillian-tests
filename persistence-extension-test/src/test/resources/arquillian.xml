@@ -16,5 +16,4 @@
      <!-- <property name="excludeTablesFromCleanup">hibernate_sequence</property>  -->
   </extension>
 
-
 </arquillian>
